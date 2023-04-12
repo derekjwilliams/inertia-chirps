@@ -11,7 +11,7 @@ dayjs.extend(relativeTime);
 
 export default function Chirp({ chirp }) {
   const { auth } = usePage().props;
-
+  console.log(JSON.stringify(auth))
   const [editing, setEditing] = useState(false);
 
   const { data, setData, patch, clearErrors, reset, errors } = useForm({
