@@ -1,6 +1,8 @@
 <?php
 use App\Http\Controllers\ChirpController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AvailableLinkController;
+use App\Http\Controllers\FavoriteLinkController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
