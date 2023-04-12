@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\FavoriteLinkGroup;
 use Illuminate\Http\Request;
+use Illuminate\Http\RedirectResponse;
+use Inertia\Inertia;
+use Inertia\Response;
 
 class FavoriteLinkGroupController extends Controller
 {
@@ -12,7 +15,9 @@ class FavoriteLinkGroupController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('FavoriteLinkGroups/Index', [
+            'favoriteLinkGroups' => FavoriteLinkGroup::with('user:id,name')->latest()->get(),
+        ]);
     }
 
     /**

@@ -35,7 +35,7 @@ Route::resource('/chirps', ChirpController::class)
     ->only(['index', 'store', 'update', 'destroy'])
     ->middleware(['auth', 'verified']);
 
-Route::resource('/favorites', FavoriteLinkGroupController::class)
+Route::resource('/favoriteLinkGroups', FavoriteLinkGroupController::class)
     ->only(['index', 'store', 'update', 'destroy'])
     ->middleware(['auth', 'verified']);
 

@@ -14,9 +14,7 @@ class FavoriteLinkController extends Controller
      */
     public function index()
     {
-        return Inertia::render('FavoriteLinkGroups/Index', [
-            //
-        ]);
+//
     }
 
     /**
