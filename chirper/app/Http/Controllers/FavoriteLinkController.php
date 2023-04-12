@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\FavoriteLink;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
+use Inertia\Response;
 
 class FavoriteLinkController extends Controller
 {
@@ -12,7 +14,9 @@ class FavoriteLinkController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('FavoriteLinkGroups/Index', [
+            //
+        ]);
     }
 
     /**
